@@ -67,12 +67,24 @@ function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   var suma = 0;
+   for (var i = 0; i < arrayOfNums.length;i++){
+      suma += arrayOfNums[i];
+   }
+   return suma;
 }
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+   var suma = 0;
+   var prom = 0;
+   for (var i = 0; i < resultadosTest.length; i++) {
+      suma += resultadosTest[i];
+      prom = suma / resultadosTest.length;
+   }
+   return prom;
 }
 
 function numeroMasGrande(arrayOfNums) {
