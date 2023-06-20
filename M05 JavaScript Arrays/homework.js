@@ -187,12 +187,26 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   var tabla = [];
+   for (var i = 0; i <= 10; i++) {
+      var mult = i*6;
+      tabla.push(mult);
+   }
+   return tabla;
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var mas100 = [];
+   for (var i = 0; i < 200; i++) {
+      if (array[i] > 100){
+      mas100.push(array[i]);
+      }
+   }
+   return mas100;
+
 }
 
 /* ----------------------------------------------------------------------------------
@@ -206,6 +220,16 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var nuevo = [];
+   var suma = num;
+   for (var i = 0; i < 10; i++) {      
+      suma = suma + 2;
+      nuevo.push(suma);
+      if(suma === i){
+         return "Se interrumpió la ejecución";         
+      } 
+   }
+   return nuevo;
 }
 
 function continueStatement(num) {
@@ -215,7 +239,19 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var nuevo = [];
+   var suma = num;
+   for (var i = 0; i < 10; i++) {
+      if (i == 5) {
+         continue;                
+   }
+   suma = suma + 2;
+   nuevo.push(suma); 
+   }
+   return nuevo;
 }
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
