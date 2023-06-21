@@ -73,6 +73,11 @@ function agregarNumeros(arrayOfNums) {
    }
    return suma;
 }
+//otra forma...callback
+//var suma = arrayOfNums.reduce(function(acc,numero){
+//return acc * numero;
+//})
+//retun suma;
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
