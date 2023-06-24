@@ -90,6 +90,7 @@ function promedioResultadosTest(resultadosTest) {
       prom = suma / resultadosTest.length;
    }
    return prom;
+   //prueba 
 }
 
 function numeroMasGrande(arrayOfNums) {
